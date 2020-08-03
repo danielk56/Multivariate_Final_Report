@@ -72,3 +72,91 @@ plots. However, univariate normal distributions do not guarantee a multivariate 
 distribution, so I also used a chi-square quantile plot test (results are displayed in Figure 1 below)
 
 ![Figure 1](graph3.png)
+
+As evidenced by this Chi-Square Quantile plot, my transformed data is not perfectly normal, but
+it is close enough where I feel confident to move forward with my data analysis.
+
+## Descriptive Plots, Summary Statistics + Multivariate Analysis:
+
+### Section 1: Principal Components Analysis
+
+![Figure 2](graph4.png)
+
+While some of the variables did not have the strongest correlations, I still felt there was
+enough correlation between the seven variables to proceed with Principal Components Analysis.
+In particular, the percentage of Total Intensive Care Unit Beds Needed in Six, Twelve, and
+Eighteen months had strong correlations and the logarithms of Projected Infected and
+Hospitalized Individuals as well as Total ICU Beds and Available ICU Beds had strong
+correlations.
+
+![Table 2](graph5.png)
+
+Table 2 shows that in order to explain 99% of the variance in my data, I would only need
+the first two principal components. Moreover, we can see that the first two eigenvalues are the
+only values greater than 1.
+
+![Figure 3](graph6.png)
+
+Now, I conduct Parallel Analysis, which is possible since my data has a multivariate
+normal distribution. This is to determine which components are statistically significant, using the
+Longman and Allen methods.
+
+![Table 3](graph7.png)
+
+![Figure 4](graph8.png)
+
+Table 3 and Figure 4 that the first two components are significant, since only their
+eigenvalues are greater than the thresholds. This reinforces what we already found earlier.
+
+![Table 4](graph9.png)
+
+For the first two components, which are of primary focus, Comp 1 has positive
+correlations with the Percentage of Total ICU Beds needed in 6, 12, and 18 months but has
+negative correlations with the log variables of Available ICU Beds, Projected Hospitalized
+Individuals, Projected Infected Individuals, and Total ICU beds. The values with largest
+magnitude, which are Available ICU Beds and Total ICU beds, lead to the belief that Component
+one is picking up on the variation in incapability to take in sick patients for hospitals in terms of
+beds. Component two, which has positive correlations with all the variables, is picking up on the
+variation in the projected capacity of the hospitals based on health care system models.
+
+![Figure 5](graph10.png)
+
+Looking at figure 5, which is the biplot of the first two principal components, the bottom
+and left-side axes are the principal component scores for the first and second components,
+respectively. The right-side and top axes are the loading coefficients for the principal
+components. There seems to be more spread in the direction of Comp2 than Comp1. The loose
+clustering indicates that the 50 states and additional territories tend to be different across the 7
+variables. This indicates that although a state might have a lot of projected infected individuals,
+for example, there is variation on how many ICU beds they might need in the coming months.
+Finally, I created a confidence ellipse plot, to test for outliers in Comp1 and Comp2.
+
+![Figure 6](graph11.png)
+
+Looking at the outliers, most of the outliers come from the direction of the second
+principal component with the exception of Vermont. California, Washington D.C., and Hawaii
+all seem to be projected to be unable to handle the coronavirus load coming in the coming
+months, which is because this is what Component 2 was primarily loaded on. Vermont on the
+other hand might have an extreme shortage of ICU beds that are available compared to other
+states. Considering that Vermont is much less populated than the other outliers, I hypothesize
+that this might be due to the large elderly population, but this point could use more exploration.
+
+To read on Cluster and Factor Analysis, please look at the PDF in the repo.
+
+##Conclusions and Discussion:
+
+Based on our analysis conducted above, we examined the impact of the COVID-19
+pandemic on the 50 U.S. states and the additional territories.
+Using Principal Components Analysis, we were able to reduce the dimensionality of the
+dataset in the first and second most directions of maximum variability. While doing this, we
+were able to see which states were outliers compared to others; one notable observation was that
+Vermont’s healthcare system is quickly projected to become overwhelmed, which might be due
+to the large eldery and retired population residing there. In cluster analysis, we were able to
+group states based on the projected severity of COVID-19 and their healthcare systems’ abilities
+to combat the virus. Through cluster analysis, we observed that there were around three different
+situations that a state could be in. Large and densely-populated states such as NY and CA are
+struggling to contain the outbreak and hospitalize patients. Next, there are middle-of-the-pack
+states that are seeing cases of the virus, but not to the extent of larger states. Lastly, there are
+sparsely populated states such as Idaho that are not seeing rapid proliferation of the virus.
+Lastly, using Factor analysis, we were able to see that the two prominent factors
+explaining our variables were the projected infections and hospitalizations due to COVID-19 and
+also hospital capacity based on predicted models of the pandemic.
