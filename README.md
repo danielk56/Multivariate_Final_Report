@@ -17,7 +17,7 @@ sanitizer and “social distancing,” where people are encouraged to maintain s
 distance between others in public. This is largely an effort to “flatten the curve” or reduce the
 peak number of infections so that the healthcare industry will not be overwhelmed.
 
-![Flattening the Curve Graphic, Source: NPR](Screen Shot 2020-08-02 at 8.16.56 PM.png)
+![Flattening the Curve Graphic, Source: NPR](graph1.png)
 
 
 Even with these efforts, however, health care systems across the country are struggling to
@@ -61,7 +61,7 @@ course of the entire pandemic. Lastly, the Percentage of Total ICU Beds Needed, 
 variables indicate how many ICU beds would need to be available to care for all patients
 requiring hospital care within X months. All of the variables are quantitative.
 
-![Data](Screen Shot 2020-08-02 at 8.17.57 PM.png)
+![Data](graph2.png)
 
 I used histograms and normal quantile plots to examine all seven variables. I decided to
 log Total ICU Beds, Available ICU Beds, Projected Infected Individuals, and Projected
@@ -71,4 +71,4 @@ these distributions were much closer to normal after examining their respective 
 plots. However, univariate normal distributions do not guarantee a multivariate normal
 distribution, so I also used a chi-square quantile plot test (results are displayed in Figure 1 below)
 
-![Figure 1](Screen Shot 2020-08-02 at 8.18.16 PM.png)
+![Figure 1](graph3.png)
