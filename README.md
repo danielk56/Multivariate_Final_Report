@@ -142,7 +142,7 @@ that this might be due to the large elderly population, but this point could use
 
 To read on Cluster and Factor Analysis, please look at the PDF in the repo.
 
-##Conclusions and Discussion:
+## Conclusions and Discussion:
 
 Based on our analysis conducted above, we examined the impact of the COVID-19
 pandemic on the 50 U.S. states and the additional territories.
