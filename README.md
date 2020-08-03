@@ -140,7 +140,7 @@ other hand might have an extreme shortage of ICU beds that are available compare
 states. Considering that Vermont is much less populated than the other outliers, I hypothesize
 that this might be due to the large elderly population, but this point could use more exploration.
 
-To read on Cluster and Factor Analysis, please look at the PDF in the repo.
+To read on Cluster and Factor Analysis, please look at the PDF in the repository.
 
 ## Conclusions and Discussion:
 
